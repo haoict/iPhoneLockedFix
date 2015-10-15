@@ -15,6 +15,7 @@
 		7F0E6B2F1BCFD0FE00D2F58B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0E6B2D1BCFD0FE00D2F58B /* LaunchScreen.storyboard */; };
 		7F0E6B3A1BCFD0FE00D2F58B /* fixtoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6B391BCFD0FE00D2F58B /* fixtoolTests.m */; };
 		7F0E6B451BCFD0FE00D2F58B /* fixtoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6B441BCFD0FE00D2F58B /* fixtoolUITests.m */; };
+		7F0E6B541BCFD1B200D2F58B /* MyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E6B531BCFD1B200D2F58B /* MyUtil.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7F0E6B401BCFD0FE00D2F58B /* fixtoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fixtoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0E6B441BCFD0FE00D2F58B /* fixtoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fixtoolUITests.m; sourceTree = "<group>"; };
 		7F0E6B461BCFD0FE00D2F58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F0E6B521BCFD19D00D2F58B /* MyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtil.h; sourceTree = "<group>"; };
+		7F0E6B531BCFD1B200D2F58B /* MyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				7F0E6B2D1BCFD0FE00D2F58B /* LaunchScreen.storyboard */,
 				7F0E6B301BCFD0FE00D2F58B /* Info.plist */,
 				7F0E6B1F1BCFD0FE00D2F58B /* Supporting Files */,
+				7F0E6B521BCFD19D00D2F58B /* MyUtil.h */,
+				7F0E6B531BCFD1B200D2F58B /* MyUtil.m */,
 			);
 			path = fixtool;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				7F0E6B271BCFD0FE00D2F58B /* ViewController.m in Sources */,
 				7F0E6B241BCFD0FE00D2F58B /* AppDelegate.m in Sources */,
 				7F0E6B211BCFD0FE00D2F58B /* main.m in Sources */,
+				7F0E6B541BCFD1B200D2F58B /* MyUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fixtool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.japanshop.fixtool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fixtool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.japanshop.fixtool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

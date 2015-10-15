@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MyUtil.h"
 
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet UILabel *messageLabel;
+@property (nonatomic, weak) IBOutlet UITextField *textField;
 
 @end
 
@@ -22,6 +26,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)Enter
+{
+    //NSString *message;
+    MyUtil *myUtil = [[MyUtil alloc]init];
+    //message = [myUtil getCacheDirPath];
+    //NSMutableArray *array = [myUtil showFiles];
+    
+    //self.messageLabel.text = message;
+    
+    [myUtil changeFilePermission];
 }
 
 @end
